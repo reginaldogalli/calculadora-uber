@@ -22,65 +22,75 @@
 			<form class="container" id="box">
 				<fieldset>
 					<legend>Informações do veículo</legend>
-					<label for="valor" class="texto">Valor já pago no veículo:</label>
-					<span>R$</span><input type="text" class="inputNormal" id="valor" placeholder="80000,00"><br>
-					<label for="valor" class="texto">Valor da parcela mensal:</label>
-					<span>R$</span><input type="text" class="inputNormal" id="valor" placeholder="0,00"><br>
-					<label for="valor" class="texto">Quantidade de parcelas restantes:</label>
-					<input type="text" class="inputPequeno" id="valor" placeholder="0"><br><br><hr><br>
-					<label for="valor" class="texto">Quantos anos pretende ficar com o veículo?</label>
-					<input type="text" class="inputPequeno" id="valor" placeholder="5"><br>
-					<label for="valor" class="texto">Quantos km pretende rodar por mês?</label>
-					<input type="text" class="inputPequeno" id="valor" placeholder="5000"><span>km</span><br>
-					<label for="valor" class="texto">Depreciação anual estimada do veículo:</label>
-					<input type="text" class="inputPequeno" id="valor" placeholder="13"><span>%</span><br>
+					<section class="secaoInterna">
+						<label for="valorPago" class="texto">Valor já pago no veículo:</label>
+						<span>R$</span><input type="text" class="inputNormal" id="valorPago" placeholder="80000,00"><br>
+						<label for="valorParcela" class="texto">Valor da parcela mensal:</label>
+						<span>R$</span><input type="text" class="inputNormal" id="valorParcela" placeholder="0,00"><br>
+						<label for="qntParcelas" class="texto">Quantidade de parcelas restantes:</label>
+						<input type="text" class="inputPequeno" id="qntParcelas" placeholder="0">
+					</section>
+					<label for="anos" class="texto">Quantos anos pretende ficar com o veículo?</label>
+					<input type="text" class="inputPequeno" id="anos" placeholder="5"><br>
+					<label for="kmMes" class="texto">Quantos km pretende rodar por mês?</label>
+					<input type="text" class="inputPequeno" id="kmMes" placeholder="5000"><span>km</span><br>
+					<label for="depreciacao" class="texto">Depreciação anual estimada do veículo:</label>
+					<input type="text" class="inputPequeno" id="depreciacao" placeholder="13"><span>%</span>
 				</fieldset>
 				<fieldset>
 					<legend>Salário</legend>
-					<label for="valor" class="texto">Lucro mensal desejado:</label>
-					<span>R$</span><input type="text" class="inputPequeno" id="valor" placeholder="1,00"><br>
+					<label for="salario" class="texto">Quanto pretende ganhar por mês:</label>
+					<span>R$</span><input type="text" class="inputNormal" id="salario" placeholder="1,00">
 				</fieldset>
 				<fieldset>
-					<legend>Ganho recebido no aplicativo</legend>
-					<label for="valor" class="texto">Valor médio recebido por km rodado:</label>
-					<span>R$</span><input type="text" class="inputPequeno" id="valor" placeholder="1,00"><br>
+					<legend>Ganho por km no aplicativo</legend>
+					<label for="ganhoKm" class="texto">Valor médio recebido por km rodado:</label>
+					<span>R$</span><input type="text" class="inputPequeno" id="ganhoKm" placeholder="1,00">
 				</fieldset>
 				<fieldset>
 					<legend>Custos anuais</legend>
-					<label for="valor" class="texto">IPVA + Licenciamento:</label>
-					<span>R$</span><input type="text" class="inputNormal" id="valor" placeholder="0,00"><br>
-					<label for="valor" class="texto">Seguro:</label>
-					<span>R$</span><input type="text" class="inputNormal" id="valor" placeholder="0,00"><br>
+					<label for="ipva" class="texto">IPVA + Licenciamento:</label>
+					<span>R$</span><input type="text" class="inputNormal" id="ipva" placeholder="0,00"><br>
+					<label for="seguro" class="texto">Seguro:</label>
+					<span>R$</span><input type="text" class="inputNormal" id="seguro" placeholder="0,00">
 				</fieldset>
 				<fieldset>
 					<legend>Manutenções</legend>
-					<label for="valor" class="texto">Valor troca de pneus:</label>
-					<span>R$</span><input type="text" class="inputNormal" id="valor" placeholder="1500,00"><br>
-					<label for="valor" class="texto">Vida útil estimada dos pneus:</label>
-					<input type="text" class="inputNormal" id="valor" placeholder="60000"><span>km</span><br><br><hr><br>
-					<label for="valor" class="texto">Valor troca de óleo:</label>
-					<span>R$</span><input type="text" class="inputNormal" id="valor" placeholder="300,00"><br>
-					<label for="valor" class="texto">Quilometragem para troca de óleo:</label>
-					<input type="text" class="inputNormal" id="valor" placeholder="10000"><span>km</span><br><br><hr><br>
-					<label for="valor" class="texto">Demais manutenções anuais:</label>
-					<span>R$</span><input type="text" class="inputNormal" id="valor" placeholder="0,00"><br>
-					<label for="valor" class="texto">Gastos mensais com o veículo:</label>
-					<span>R$</span><input type="text" class="inputNormal" id="valor" placeholder="0,00"><br>
+					<section class="secaoInterna">
+						<label for="valorPneu" class="texto">Valor troca de pneus:</label>
+						<span>R$</span><input type="text" class="inputNormal" id="valorPneu" placeholder="1500,00"><br>
+						<label for="kmPneu" class="texto">Vida útil estimada dos pneus:</label>
+						<input type="text" class="inputNormal" id="kmPneu" placeholder="60000"><span>km</span>
+					</section>
+					<section class="secaoInterna">
+						<label for="valorOleo" class="texto">Valor troca de óleo:</label>
+						<span>R$</span><input type="text" class="inputNormal" id="valorOleo" placeholder="300,00"><br>
+						<label for="kmOleo" class="texto">Quilometragem para troca de óleo:</label>
+						<input type="text" class="inputNormal" id="kmOleo" placeholder="10000"><span>km</span>
+					</section>
+					<label for="valorManut" class="texto">Demais manutenções anuais:</label>
+					<span>R$</span><input type="text" class="inputNormal" id="valorManut" placeholder="0,00"><br>
+					<label for="gastosMensais" class="texto">Gastos mensais com o veículo:</label>
+					<span>R$</span><input type="text" class="inputNormal" id="gastosMensais" placeholder="0,00">
 				</fieldset>
 				<fieldset>
 					<legend>Combustível</legend>
-					<label for="valor" class="texto">Valor do litro de gasolina:</label>
-					<span>R$</span><input type="text" class="inputNormal" id="valor" placeholder="5,00"><br>
-					<label for="valor" class="texto">Consumo médio utilizando gasolina:</label>
-					<input type="text" class="inputPequeno" id="valor" placeholder="15"><span>km/l</span><br><br><hr><br>
-					<label for="valor" class="texto">Valor do litro de etanol:</label>
-					<span>R$</span><input type="text" class="inputNormal" id="valor" placeholder="4,00"><br>
-					<label for="valor" class="texto">Consumo médio utilizando etanol:</label>
-					<input type="text" class="inputPequeno" id="valor" placeholder="10"><span>km</span><br><br><hr><br>
-					<label for="valor" class="texto">Valor do m³ de GNV:</label>
-					<span>R$</span><input type="text" class="inputNormal" id="valor" placeholder="4,80"><br>
-					<label for="valor" class="texto">Consumo médio utilizando GNV:</label>
-					<input type="text" class="inputPequeno" id="valor" placeholder="22"><span>km</span>
+					<section class="secaoInterna">
+						<label for="valorGasolina" class="texto">Valor do litro de gasolina:</label>
+						<span>R$</span><input type="text" class="inputNormal" id="valorGasolina" placeholder="5,00"><br>
+						<label for="consumoGasolina" class="texto">Consumo médio utilizando gasolina:</label>
+						<input type="text" class="inputPequeno" id="consumoGasolina" placeholder="15"><span>km/l</span>
+					</section>
+					<section class="secaoInterna">
+						<label for="valorEtanol" class="texto">Valor do litro de etanol:</label>
+						<span>R$</span><input type="text" class="inputNormal" id="valorEtanol" placeholder="4,00"><br>
+						<label for="consumoEtanol" class="texto">Consumo médio utilizando etanol:</label>
+						<input type="text" class="inputPequeno" id="consumoEtanol" placeholder="10"><span>km/l</span>
+					</section>
+					<label for="valorGnv" class="texto">Valor do m³ de GNV:</label>
+					<span>R$</span><input type="text" class="inputNormal" id="valorGnv" placeholder="4,80"><br>
+					<label for="consumoGnv" class="texto">Consumo médio utilizando GNV:</label>
+					<input type="text" class="inputPequeno" id="consumoGnv" placeholder="22"><span>km/m³</span>
 				</fieldset>
 				<button class="container" id="calcular">Calcular<img src="./img/calc.png"></button>
 				<section id="resultado"></section>
