@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	font-family: 'Ropa Sans', sans-serif;
+}
+
+body {
+	width: 100%;
+	height: 98%;
+	background-color: black;
+	flex-direction: column;
+}
+
+header {
+	margin-top: 10px;
+	width: 100%;
+	flex-direction: row;
+	align-items: center;
+}
+
+#logo {
+	width: 50px;
+	height: 50px;
+}
+
+h1 {
+	padding-top: 5px;
+	text-align: center;
+	flex-grow: 1;
+	color: white;
+	font-weight: lighter;
+}
+
+main {
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+}
+
+#instrucoes {
+	background-color: white;
+	color: gray;
+	text-align: center;
+	font-size: 0.8em;
+	border-radius: 15px;
+	margin-top: 20px;
+	width: 400px;
+	height: auto;
+	padding: 10px;
+	box-shadow: 2px 2px 5px #6a6a6a;
+}
+
+fieldset {
+	margin-top: 20px;
+	padding: 15px;
+	width: 100%;
+	text-align: center;
+}
+
+legend {
+	font-size: 1.2em;
+}
+
+#box {
+	background-color: white;
+	border-radius: 15px;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+	width: 400px;
+	height: auto;
+	padding: 0 20px 20px 20px;
+	box-shadow: 2px 2px 5px #6a6a6a;
+}
+
+input {
+	height: 30px;
+	padding: 5px;
+	text-align: center;
+	margin: 5px 0px 5px 5px;
+	border: 1px solid lightGray;
+	border-radius: 5px;
+}
+
+.inputNormal {
+	width: 90px;
+}
+
+.inputPequeno {
+	width: 54px;
+}
+
+#calcular {
+	width: 150px;
+	height: 40px;
+	margin: 20px;
+	border-radius: 20px;
+	border: none;
+	background-color: rgb(0, 0, 0);
+	color: white;
+	font-size: 1.2em;
+	justify-content: space-evenly;
+	align-items: center;
+	
+}
+
+#calcular:hover{
+	background-color: rgb(36, 36, 36);
+	box-shadow: 3px 3px 5px #6a6a6a;
+}
+
+button > img {
+	height: 20px;
+}
+
+#resultado {
+	background-color: white;
+	width: 100%;
+	height: 40px;
+	padding: 20px 10px 10px 0;
+	text-align: center;
+	vertical-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	border: 1px solid rgb(99, 99, 99);
+	box-shadow: 2px 2px 5px #6a6a6a;
+}
+
+.texto, span {
+	font-size: 0.8em;
+}
+
+span {
+	margin-left: 5px;
+}
+
+
